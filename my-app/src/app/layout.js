@@ -23,6 +23,14 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <div className="bg-gradient-to-b from-gray-900 to-gray-800">
+          <div className="container mx-auto py-16 px-4">
+            <h2 className="text-3xl font-bold text-white">Footer Content</h2>
+            <p className="mt-4 text-gray-400">
+              This is a simple footer section with a gradient background.
+            </p>
+          </div>
+        </div>
       </body>
     </html>
   );
