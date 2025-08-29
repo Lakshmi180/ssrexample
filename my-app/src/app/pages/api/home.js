@@ -1,5 +1,7 @@
-export default function handler(req, res) {
-  res.status(200).json({
+import { NextResponse } from "next/server";
+
+export async function GET() {
+  return NextResponse.json({
     navbar: {
       logo: "/logo.png",
       links: ["Home", "Courses", "About", "Contact"],
